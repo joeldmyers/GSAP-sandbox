@@ -12,7 +12,7 @@
     <button id="cta">Click here</button>
 
     <div class="panel">
-      <img src="img/whale.jpeg">
+      <img id="light" src="img/whale.jpeg">
       <p>Lorem ipsum etc. etc.</p>
       <div class="box"></div>
     </div>
@@ -20,7 +20,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
 
     <script>
-
+      document.getElementById('cta').addEventListener('click', function() {
+        // selector, duration, css properties
+        TweenMax.to('.panel', 1, {scaleY: 1, height: '100vh'});
+        TweenMax.to('#light', 1, {opacity: 1, y: 0, delay: 1});
+        TweenMax.to('p', 1, { opacity: 1, y: 20, delay: 1.4});
+        TweenMax.to('.box', 3, { opacity: 1, scale: 1});
+      });
     </script>
   </body>
 </html>
