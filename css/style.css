@@ -1,0 +1,51 @@
+body {
+  font-family: 'Montserrat' 'sans-serif';
+  padding: 9em;
+}
+
+h1 {
+  font-size: 5em;
+  color: #272729;
+  font-size: 5em;
+  width: 25%;
+}
+
+button {
+  background: none;
+  border: 1px solid #282828;
+  font-weight: bold;
+  font-size: 1.7em;
+  cursor: pointer;
+}
+
+.panel {
+  position: absolute;
+  width: 55%;
+  height: 100vh;
+  bottom: 0;
+  right: 0;
+  background: #eaeaea;
+  box-sizing: border-box;
+  padding: 15% 7%;
+}
+
+.panel img {
+  width: 120px;
+  float: left;
+  margin-right: 50px;
+}
+
+.panel p {
+  font-size: 1.9em;
+  width: 80%;
+}
+
+.box {
+  border: 5px solid grey;
+  width: 65%;
+  height: 40%;
+  position: absolute;
+  left: -7%;
+  top: 15%;
+  z-index: -1;
+}
